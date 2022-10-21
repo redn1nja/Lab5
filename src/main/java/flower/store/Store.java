@@ -11,26 +11,24 @@ public class Store {
     private List<FlowerBucket> buckets = new ArrayList<>();
     @Getter @Setter
     private List<FlowerPack> packs = new ArrayList<>();
-    public Store(){
 
-    }
-    public void addPack(FlowerPack pack){
+    public void addPack(FlowerPack pack) {
         packs.add(pack);
     }
 
-    public void addBucket(FlowerBucket bucket){
+    public void addBucket(FlowerBucket bucket) {
         buckets.add(bucket);
     }
 
     public boolean search(FlowerType flower) {
         for (FlowerPack pack : packs) {
-            if (pack.getFlower().getFlowerType()==flower) {
+            if (pack.getFlower().getFlowerType() == flower) {
                 return true;
             }
         }
         for (FlowerBucket bucket: buckets) {
             for (FlowerPack pack : bucket.getPacks()) {
-                if (pack.getFlower().getFlowerType()==flower) {
+                if (pack.getFlower().getFlowerType() == flower) {
                     return true;
                 }
             }
