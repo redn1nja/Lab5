@@ -1,10 +1,14 @@
 package flower.store;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class FlowerBucket {
-    public List<FlowerPack> packs = new ArrayList<>();
+    @Getter @Setter
+    private List<FlowerPack> packs = new ArrayList<>();
 
     public void add(FlowerPack pack){
         packs.add(pack);
