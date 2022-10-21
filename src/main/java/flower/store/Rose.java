@@ -1,7 +1,7 @@
 package flower.store;
 
 public class Rose extends Flower {
-    public Rose(){
+    public Rose() {
         setFlowerType(FlowerType.ROSE);
     }
 }

@@ -10,7 +10,7 @@ public class FlowerBucket {
     @Getter @Setter
     private List<FlowerPack> packs = new ArrayList<>();
 
-    public void add(FlowerPack pack){
+    public void add(FlowerPack pack) {
         packs.add(pack);
     }
     public double getPrice() {

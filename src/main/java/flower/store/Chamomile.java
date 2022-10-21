@@ -1,7 +1,8 @@
 package flower.store;
 
 public class Chamomile extends Flower {
-    public Chamomile(){
+    public Chamomile()
+    {
         setFlowerType(FlowerType.CHAMOMILE);
     }
 }
